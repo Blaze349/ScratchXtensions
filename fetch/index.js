@@ -9,7 +9,7 @@
     
     /* All functions should take a url of type String and a header */
     
-    ext.get = (url) => {
+    ext.get = (url, callback) => {
         let myHeaders = new Headers();
         
         let options = {
@@ -21,13 +21,13 @@
         //fetch get
         
         fetch(url, options).then(response => {
-            console.log(JSON.stringify(response.json()))
-            return JSON.stringify(response.json())
+            console.log(response.json())
+            callback(response.json())
             
         });
         
     };
-    ext.post = (url) => {
+    ext.post = (url, callback) => {
         let myHeaders = new Headers();
         
         let options = {
@@ -39,14 +39,14 @@
         //fetch post
         
         fetch(url, options).then(response => {
-            console.log(JSON.stringify(response.json()))
-            return JSON.stringify(response.json())
+            console.log(response.json())
+            callback(response.json())
             
         });
        
     };
     
-    ext.put = (url) => {
+    ext.put = (url, callback) => {
         let myHeaders = new Headers();
         
         let options = {
@@ -58,13 +58,13 @@
         //fetch put
         
         fetch(url, options).then(response => {
-            console.log(JSON.stringify(response.json()))
-            return JSON.stringify(response.json())
+            console.log(response.json())
+            callback(response.json())
             
         });
     };
     
-    ext.delete = (url) => {
+    ext.delete = (url, callback) => {
         let myHeaders = new Headers();
         
         let options = {
@@ -76,8 +76,8 @@
         //fetch delete
         
         fetch(url, options).then(response => {
-            console.log(JSON.stringify(response.json()))
-            return JSON.stringify(response.json())
+            console.log(response.json())
+            callback(response.json())
             
         });
     };
