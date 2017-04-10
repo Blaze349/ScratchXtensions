@@ -14,16 +14,17 @@
         
         let options = {
             method: 'GET',
-            headers: myHeaders,
-            mode: 'cors'
+            headers: myHeaders
         };
         
         //fetch get
         
         fetch(url, options).then(response => {
-            console.log(response.json())
-            callback(response.json())
+            console.log(response.json());
+            callback(response.json());
             
+        }).catch(err => {
+            callback(err);
         });
         
     };
@@ -32,16 +33,17 @@
         
         let options = {
             method: 'POST',
-            headers: myHeaders,
-            mode: 'cors'
+            headers: myHeaders
         };
         
         //fetch post
         
         fetch(url, options).then(response => {
-            console.log(response.json())
-            callback(response.json())
+            console.log(response.json());
+            callback(response.json());
             
+        }).catch(err => {
+            callback(err);
         });
        
     };
@@ -51,16 +53,17 @@
         
         let options = {
             method: 'PUT',
-            headers: myHeaders,
-            mode: 'cors'
+            headers: myHeaders
         };
         
         //fetch put
         
         fetch(url, options).then(response => {
-            console.log(response.json())
-            callback(response.json())
+            console.log(response.json());
+            callback(response.json());
             
+        }).catch(err => {
+            callback(err);
         });
     };
     
@@ -69,16 +72,17 @@
         
         let options = {
             method: 'DELETE',
-            headers: myHeaders,
-            mode: 'cors'
+            headers: myHeaders
         };
         
         //fetch delete
         
         fetch(url, options).then(response => {
-            console.log(response.json())
-            callback(response.json())
+            console.log(response.json());
+            callback(response.json());
             
+        }).catch(err => {
+            callback(err);
         });
     };
     
