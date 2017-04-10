@@ -20,6 +20,10 @@
         //fetch get
         
         fetch(url, options).then(response => {
+            return response.text();
+        }).then(text => {
+            callback(text);
+        });(url, options).then(response => {
             let responseText = response.text();
             console.log(responseText);
             callback(responseText);
@@ -38,9 +42,9 @@
         //fetch post
         
         fetch(url, options).then(response => {
-            let responseText = response.text();
-            console.log(responseText);
-            callback(responseText);
+            return response.text();
+        }).then(text => {
+            callback(text);
         });
        
     };
@@ -56,9 +60,9 @@
         //fetch put
         
         fetch(url, options).then(response => {
-            let responseText = response.text();
-            console.log(responseText);
-            callback(responseText);
+            return response.text();
+        }).then(text => {
+            callback(text);
         });
     };
     
@@ -73,9 +77,9 @@
         //fetch delete
         
         fetch(url, options).then(response => {
-            let responseText = response.text();
-            console.log(responseText);
-            callback(responseText);
+            return response.text();
+        }).then(text => {
+            callback(text);
         });
     };
     
