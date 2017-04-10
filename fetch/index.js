@@ -23,10 +23,6 @@
             return response.text();
         }).then(text => {
             callback(text);
-        });(url, options).then(response => {
-            
-            callback(response);
-            
         });
         
     };
