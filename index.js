@@ -35,5 +35,5 @@
         ]
     };
     
-    
+    ScratchExtensions.register('Fetch', descriptor, ext);
 })({});
