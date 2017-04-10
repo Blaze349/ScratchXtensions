@@ -21,8 +21,8 @@
         //fetch get
         
         fetch(url, options).then(response => {
-            
-            return response.text()
+            console.log(JSON.stringify(response.json()))
+            return JSON.stringify(response.json())
             
         });
         
@@ -39,8 +39,8 @@
         //fetch post
         
         fetch(url, options).then(response => {
-            
-            return response.text()
+            console.log(JSON.stringify(response.json()))
+            return JSON.stringify(response.json())
             
         });
        
@@ -58,8 +58,8 @@
         //fetch put
         
         fetch(url, options).then(response => {
-            
-            return response.text()
+            console.log(JSON.stringify(response.json()))
+            return JSON.stringify(response.json())
             
         });
     };
@@ -76,8 +76,8 @@
         //fetch delete
         
         fetch(url, options).then(response => {
-            
-            return response.text()
+            console.log(JSON.stringify(response.json()))
+            return JSON.stringify(response.json())
             
         });
     };
