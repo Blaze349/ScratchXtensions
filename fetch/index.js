@@ -21,10 +21,8 @@
         //fetch get
         
         fetch(url, options).then(response => {
-            callback(response.json());
+            callback(response.text());
             
-        }).catch(err => {
-            callback(err);
         });
         
     };
@@ -40,10 +38,8 @@
         //fetch post
         
         fetch(url, options).then(response => {
-            callback(response.json());
+            callback(response.text());
             
-        }).catch(err => {
-            callback(err);
         });
        
     };
@@ -60,10 +56,8 @@
         //fetch put
         
         fetch(url, options).then(response => {
-            callback(response.json());
+            callback(response.text());
             
-        }).catch(err => {
-            callback(err);
         });
     };
     
@@ -79,10 +73,8 @@
         //fetch delete
         
         fetch(url, options).then(response => {
-            callback(response.json());
+            callback(response.text());
             
-        }).catch(err => {
-            callback(err);
         });
     };
     
