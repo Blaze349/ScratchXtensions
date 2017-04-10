@@ -14,7 +14,8 @@
         
         let options = {
             method: 'GET',
-            headers: myHeaders
+            headers: myHeaders,
+            mode: "no-cors"
         };
         
         //fetch get
@@ -33,7 +34,8 @@
         
         let options = {
             method: 'POST',
-            headers: myHeaders
+            headers: myHeaders,
+            mode: "no-cors"
         };
         
         //fetch post
@@ -53,7 +55,8 @@
         
         let options = {
             method: 'PUT',
-            headers: myHeaders
+            headers: myHeaders,
+            mode: "no-cors"
         };
         
         //fetch put
@@ -72,7 +75,8 @@
         
         let options = {
             method: 'DELETE',
-            headers: myHeaders
+            headers: myHeaders,
+            mode: "no-cors"
         };
         
         //fetch delete
