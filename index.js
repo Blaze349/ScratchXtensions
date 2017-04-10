@@ -25,7 +25,7 @@
     };
     
     //Description of my new block types
-    var descripter = {
+    var descriptor = {
         blocks: [
             ['R', 'get', 'get'],
             ['R', 'post', 'post'],
