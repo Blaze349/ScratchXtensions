@@ -24,9 +24,8 @@
         }).then(text => {
             callback(text);
         });(url, options).then(response => {
-            let responseText = response.text();
-            console.log(responseText);
-            callback(responseText);
+            
+            callback(response);
             
         });
         
