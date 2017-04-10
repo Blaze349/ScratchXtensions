@@ -1,26 +1,26 @@
-( (ext) => {
-    ext._shutdown = () => {
+( function(ext){
+    ext._shutdown = function() {
         
     };
     
-    ext._getStatus = () => {
+    ext._getStatus = function() {
         return {status: 2, msg: "Fetch is operational"};
     };
     
     /* All functions should take a url of type String and a header */
     
-    ext.get = () => {
+    ext.get = function() {
         //fetch get
     };
-    ext.post = () => {
+    ext.post = function() {
         //fetch post
     };
     
-    ext.put = () => {
+    ext.put = function() {
         //fetch put
     };
     
-    ext.delete = () => {
+    ext.delete = function() {
         //fetch delete
     };
     
