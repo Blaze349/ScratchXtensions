@@ -21,7 +21,6 @@
         //fetch get
         
         fetch(url, options).then(response => {
-            console.log(response.json());
             callback(response.json());
             
         }).catch(err => {
@@ -41,7 +40,6 @@
         //fetch post
         
         fetch(url, options).then(response => {
-            console.log(response.json());
             callback(response.json());
             
         }).catch(err => {
@@ -62,7 +60,6 @@
         //fetch put
         
         fetch(url, options).then(response => {
-            console.log(response.json());
             callback(response.json());
             
         }).catch(err => {
@@ -82,7 +79,6 @@
         //fetch delete
         
         fetch(url, options).then(response => {
-            console.log(response.json());
             callback(response.json());
             
         }).catch(err => {
