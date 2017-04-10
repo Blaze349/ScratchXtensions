@@ -1,2 +1,0 @@
-# ScratchXtensions
-My scratch extensions
