@@ -20,7 +20,7 @@
         //fetch get
         
         fetch(url, options).then(response => {
-            return response.text();
+            return response.json();
         }).then(text => {
             callback(text);
         });
